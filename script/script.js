@@ -11,9 +11,11 @@ function onPageLoad(sParam) {
         	if (sParameterName[1] == "did_navi") {
         		document.getElementById("start_navi_").disabled = true; 	
         		document.getElementById("txt_description_").innerHTML = "案内終了";
+        		document.getElementById("start_navi_").setAttribute( "disabled", "disabled" );
         	} else {
         		document.getElementById("start_route_").disabled = true; 	
         		document.getElementById("txt_description_").innerHTML = "終了";
+        		document.getElementById("start_route_").setAttribute( "disabled", "disabled" );
         	}
         }
     }
