@@ -15,7 +15,6 @@ function onPageLoad(sParam) {
         		document.getElementById("start_route_").disabled = true; 	
         		document.getElementById("txt_description_").innerHTML = "終了";
         	}
-
         }
     }
 }
