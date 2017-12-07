@@ -13,8 +13,8 @@ function onPageLoad(sParam) {
         	} else {
         		document.getElementById("txt_description_").innerHTML = "終了";
         	}
-        	document.getElementById("start_route_").setAttribute( "hidden", "hidden" );
-        	document.getElementById("start_navi_").setAttribute( "hidden", "hidden" );
+        	document.getElementById("start_route_").style.display = 'none';
+        	document.getElementById("start_navi_").style.display = 'none';
         }
     }
 }
