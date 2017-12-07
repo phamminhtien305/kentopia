@@ -2,7 +2,6 @@
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,6 +21,13 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <<style type="text/css" media="screen">
+    	a.disabled {
+          pointer-events: none;
+          color: #ccc;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -37,15 +43,21 @@
         <!-- Page Content -->
         <div id="page-wrapper">
             <div class="container-fluid">
-                <div class="row">
+                <div class="row" style="padding-top: 10px;">
                     <div class="col-lg-12">
-                    	<a class="navbar-brand" href="intent://phamminhtien305.github.io/kentopia.io/#Intent;scheme=https;package=net.zmap.znav;S.json={'type':'route','geodetic_datum':'wgs','destinations':[{'lat':35.632924,'lon':139.880316,'label':'東京ディズニーランド'}]};end"> Start Z-Nav With Route </a>
+                    	<button type="button" id="start_route_" class="btn btn-success" action="intent://phamminhtien305.github.io/kentopia.io/#Intent;scheme=https;package=net.zmap.znav;S.json={'type':'route','geodetic_datum':'wgs','destinations':[{'lat':35.632924,'lon':139.880316,'label':'東京ディズニーランド'}]};end"> Start Z-Nav With Route </button>
                     </div>
                     <!-- /.col-lg-12 -->
                 </div>
-                <div class="row">
+                <div class="row" style="padding-top: 10px;">
                     <div class="col-lg-12">
-                    	<a class="navbar-brand" href="intent://phamminhtien305.github.io/kentopia.io/#Intent;scheme=https;package=net.zmap.znav;S.json={'type':'route','geodetic_datum':'wgs','destinations':[{'lat':35.632924,'lon':139.880316,'label':'東京ディズニーランド'}],'navigation':true,'condition':{'route_search':1,'congestion_consideration_level':1,'congestion_consideration':true,'ferry_route':false,'smart_ic':true,'winter_season_regulation':true,'time_regulation':true},'vehicle_info':{'height':200,'width':170,'weight':5000,'riding_capacity':3,'maximum_load':2000,'type':2}}};end"> Start Z-Nav With Start Navi </a>
+                    	<button type="button" id="start_navi_" class="btn btn-success" action="intent://phamminhtien305.github.io/kentopia.io/#Intent;scheme=https;package=net.zmap.znav;S.json={'type':'route','geodetic_datum':'wgs','destinations':[{'lat':35.632924,'lon':139.880316,'label':'東京ディズニーランド'}],'navigation':true,'condition':{'route_search':1,'congestion_consideration_level':1,'congestion_consideration':true,'ferry_route':false,'smart_ic':true,'winter_season_regulation':true,'time_regulation':true},'vehicle_info':{'height':200,'width':170,'weight':5000,'riding_capacity':3,'maximum_load':2000,'type':2}}};end"> Start Z-Nav With Start Navi </a>
+                    </div>'
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row" style="padding-top: 10px;">
+                    <div class="col-lg-12">
+                    	<p id="txt_description_"></p>
                     </div>'
                     <!-- /.col-lg-12 -->
                 </div>
@@ -68,7 +80,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="dist/js/sb-admin-2.js"></script>
-
+	<script src="script/script.js" type="text/javascript"/></script>
 </body>
 
 </html>
