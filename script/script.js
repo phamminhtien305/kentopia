@@ -9,14 +9,12 @@ function onPageLoad(sParam) {
         var sParameterName = sURLVariables[i].split("=");
         if (sParameterName[0] == sParam) {
         	if (sParameterName[1] == "did_navi") {
-        		document.getElementById("start_navi_").disabled = true; 	
         		document.getElementById("txt_description_").innerHTML = "案内終了";
-        		document.getElementById("start_navi_").setAttribute( "disabled", "disabled" );
         	} else {
-        		document.getElementById("start_route_").disabled = true; 	
         		document.getElementById("txt_description_").innerHTML = "終了";
-        		document.getElementById("start_route_").setAttribute( "disabled", "disabled" );
         	}
+        	document.getElementById("start_route_").setAttribute( "hidden", "hidden" );
+        	document.getElementById("start_navi_").setAttribute( "hidden", "hidden" );
         }
     }
 }
