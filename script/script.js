@@ -13,8 +13,9 @@ function onPageLoad(sParam) {
         	} else {
         		document.getElementById("txt_description_").innerHTML = "終了";
         	}
+        	document.getElementById("start_package_id_").style.display = 'none';
         	document.getElementById("start_route_").style.display = 'none';
-        	document.getElementById("start_navi_").style.display = 'none';
+        	document.getElementById("start_point_").style.display = 'none';
         }
     }
 }
