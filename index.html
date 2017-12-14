@@ -1,89 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-
+<!-- saved from url=(0047)file:///Users/phamtien/Desktop/testktp.php.html -->
+<html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>KENTOPIA - TEST</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- MetisMenu CSS -->
-    <link href="vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
-    <link href="dist/css/sb-admin-2.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <style type="text/css" media="screen">
-    	a.disabled {
-          pointer-events: none;
-          color: #ccc;
-        }
-    </style>
-
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
 </head>
-
-<body>
-    <div id="wrapper">
-        <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="index.html">KENTOPIA - 牛乳配送アプリ開発要件</a>
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
-
-        <!-- Page Content -->
-        <div id="page-wrapper">
-            <div class="container-fluid">
-            	<div class="row" style="padding-top: 10px;">
-                    <div class="col-lg-12">
-                    	<a type="button" id="start_package_id_" class="btn btn-success" href="intent://com.zdc.ktpznav#Intent;scheme=https;package=net.zmap.ktpznav;S.json={'back_url':'https://phamminhtien305.github.io/kentopia.io'};end"> Start Z-Nav with package ID </a>
-                    </div>
-                </div>
-                <div class="row" style="padding-top: 10px;">
-                    <div class="col-lg-12">
-                    	<a type="button" id="start_route_" class="btn btn-success" href="intent://com.zdc.ktpznav#Intent;scheme=https;package=net.zmap.ktpznav;S.json={'type':'route','geodetic_datum':'wgs','destinations':[{'lat':35.632924,'lon':139.880316,'label':'東京ディズニーランド'}],'back_url':'https://phamminhtien305.github.io/kentopia.io'};end"> Start Z-Nav with search route </a>
-                    </div>
-                </div>
-            	<div class="row" style="padding-top: 10px;">
-                    <div class="col-lg-12">
-                    	<a type="button" id="start_point_" class="btn btn-success" href="intent://com.zdc.ktpznav#Intent;scheme=https;package=net.zmap.ktpznav;S.json={'type':'marker','geodetic_datum':'wgs','scale':100,'markers':[{'lat':35.658798,'lon':139.745444,'label':'東京タワー','address':'東京都港区芝公園４丁目２−８','phone_numbers':['033-433-5111']},{'lat':35.6251543,'lon':139.77536,'label':'ダイバーシティ東京','address':'東京都江東区青海1丁目1-10','phone_numbers':['03-6380-7800']}],'back_url':'https://www.google.com.vn/'};end"> Start Z-Nav With Point </a>
-                    </div>
-                </div>
-                <div class="row" style="padding-top: 10px;">
-                    <div class="col-lg-12">
-                    	<p id="txt_description_"></p>
-                    </div>
-                    <!-- /.col-lg-12 -->
-                </div>
-                <!-- /.row -->
-            </div>
-            <!-- /.container-fluid -->
+	<body>
+		<div class="col-lg-12">
+            <a type="button" id="start_navi_" class="btn btn-success" href="intent://phamminhtien305.github.io/kentopia.io/#Intent;scheme=https;package=net.zmap.znav;S.json={'type':'route','geodetic_datum':'wgs','destinations':[{'lat':35.632924,'lon':139.880316,'label':'東京ディズニーランド'}],'navigation':true,'condition':{'route_search':1,'congestion_consideration_level':1,'congestion_consideration':true,'ferry_route':false,'smart_ic':true,'winter_season_regulation':true,'time_regulation':true},'vehicle_info':{'height':200,'width':170,'weight':5000,'riding_capacity':3,'maximum_load':2000,'type':2}},'back_url':'https://www.google.com.vn/'};end"> Start Z-Nav</a>
         </div>
-        <!-- /#page-wrapper -->
-    </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Metis Menu Plugin JavaScript -->
-    <script src="vendor/metisMenu/metisMenu.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script src="dist/js/sb-admin-2.js"></script>
-	<script src="script/script.js" type="text/javascript"/></script>
-</body>
-
+	</body>
 </html>
