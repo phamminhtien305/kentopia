@@ -22,7 +22,7 @@ function onPageLoad(sParam) {
 	if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
     {
     	var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace('BROWSER','Opera');
+    	intent = intent.replace("BROWSER","Opera");
     	document.getElementById("start_navi_").href = intent
     	document.getElementById("title").innerHTML = 'Opera'
 
@@ -30,9 +30,9 @@ function onPageLoad(sParam) {
     else if(navigator.userAgent.indexOf("Chrome") != -1 )
     {
         var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace('BROWSER','Chrome');
+    	intent = intent.replace("BROWSER","Chrome");
     	document.getElementById("start_navi_").href = intent
-    	document.getElementById("title").innerHTML = 'Chrome'
+    	document.getElementById("title").innerHTML = "Chrome"
     }
     else if(navigator.userAgent.indexOf("Safari") != -1)
     {
