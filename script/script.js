@@ -19,7 +19,7 @@ function onPageLoad(sParam) {
         }
     }
 
-	if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf("OPR")) != -1 ) 
+	if(navigator.userAgent.indexOf("OPR")) != -1 ) 
     {
     	var intent= document.getElementById("start_navi_").href;
     	intent = intent.replace("BROWSER","Opera");
