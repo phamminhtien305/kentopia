@@ -25,7 +25,8 @@ function onPageLoad(sParam) {
     	intent = intent.replace("BROWSER","Opera");
     	document.getElementById("start_navi_").href = intent
     	document.getElementById("status").innerHTML = "Opera"
-
+    } else {
+        document.getElementById("status").innerHTML = navigator.userAgent
     }
  //    else if(navigator.userAgent.indexOf("Chrome") != -1 )
  //    {
