@@ -19,10 +19,15 @@ function onPageLoad(sParam) {
     }
 
     var Opera = (navigator.userAgent.match(/Opera|OPR\//) ? true : false);
-    var intent= document.getElementById("start_navi_").href;
-    intent = intent.replace("BROWSER","Opera");
-    document.getElementById("start_navi_").href = intent;
-    document.getElementById("status").innerHTML = "Opera";
+    if (Opera) {
+        var intent= document.getElementById("start_navi_").href;
+        intent = intent.replace("BROWSER","Opera");
+        document.getElementById("start_navi_").href = intent;
+        document.getElementById("status").innerHTML = "Opera";    
+    } else {
+        document.getElementById("status").innerHTML = "Unknown";
+    }
+    
 	
     // if(Opera)  {
     	// var intent= document.getElementById("start_navi_").href;
