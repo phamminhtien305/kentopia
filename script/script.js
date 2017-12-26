@@ -1,7 +1,7 @@
 window.onload = onPageLoad('state');
 
 function onPageLoad(sParam) {
-  
+    document.getElementById("status").innerHTML = "Chrome"
   	var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split("&");
 
