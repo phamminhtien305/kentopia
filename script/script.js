@@ -1,7 +1,6 @@
 window.onload = onPageLoad('state');
 
 function onPageLoad(sParam) {
-    document.getElementById("status").innerHTML = "Chrome";
   	var sPageURL = window.location.search.substring(1);
     var sURLVariables = sPageURL.split("&");
 
@@ -19,30 +18,25 @@ function onPageLoad(sParam) {
         }
     }
 
+    var Opera = (navigator.userAgent.match(/Opera|OPR\//) ? true : false);
+
 	
-    if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf("OPR")) != -1 ) 
-    {
+    if(Opera)  {
     	var intent= document.getElementById("start_navi_").href;
     	intent = intent.replace("BROWSER","Opera");
     	document.getElementById("start_navi_").href = intent;
     	document.getElementById("status").innerHTML = "Opera";
-    }
-    else if(navigator.userAgent.indexOf("Chrome") != -1 )
-    {
+    } else if(navigator.userAgent.indexOf("Chrome") != -1 ) {
         var intent= document.getElementById("start_navi_").href;
     	intent = intent.replace("BROWSER","Chrome");
     	document.getElementById("start_navi_").href = intent;
     	document.getElementById("status").innerHTML = "Chrome";
-    }
-    else if(navigator.userAgent.indexOf("Safari") != -1)
-    {
+    } else if(navigator.userAgent.indexOf("Safari") != -1) {
     	var intent= document.getElementById("start_navi_").href;
     	intent = intent.replace("BROWSER","Safari");
     	document.getElementById("start_navi_").href = intent;
     	document.getElementById("status").innerHTML = "Safari";
-    }
-    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
-    {
+    } else if(navigator.userAgent.indexOf("Firefox") != -1 ) {
          var intent= document.getElementById("start_navi_").href;
     	intent = intent.replace("BROWSER","Firefox");
     	document.getElementById("start_navi_").href = intent;
