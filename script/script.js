@@ -19,47 +19,47 @@ function onPageLoad(sParam) {
         }
     }
 
-	if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf("OPR")) != -1 ) 
-    {
-    	var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace("BROWSER","Opera");
-    	document.getElementById("start_navi_").href = intent
-    	document.getElementById("status").innerHTML = "Opera"
+	// if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf("OPR")) != -1 ) 
+ //    {
+ //    	var intent= document.getElementById("start_navi_").href;
+ //    	intent = intent.replace("BROWSER","Opera");
+ //    	document.getElementById("start_navi_").href = intent
+ //    	document.getElementById("status").innerHTML = "Opera"
 
-    }
-    else if(navigator.userAgent.indexOf("Chrome") != -1 )
-    {
-        var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace("BROWSER","Chrome");
-    	document.getElementById("start_navi_").href = intent
-    	document.getElementById("status").innerHTML = "Chrome"
-    }
-    else if(navigator.userAgent.indexOf("Safari") != -1)
-    {
-    	var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace("BROWSER","Safari");
-    	document.getElementById("start_navi_").href = intent
-    	document.getElementById("status").innerHTML = "Safari"
-    }
-    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
-    {
-         var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace("BROWSER","Firefox");
-    	document.getElementById("start_navi_").href = intent
-    	document.getElementById("status").innerHTML = "Firefox"
-    }
-    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
-    {
-     	var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace("BROWSER","IE");
-    	document.getElementById("start_navi_").href = intent
-    	document.getElementById("status").innerHTML = "IE"
-    }  
-    else 
-    {
-    	var intent= document.getElementById("start_navi_").href;
-    	intent = intent.replace("BROWSER","unknown");
-    	document.getElementById("start_navi_").href = intent
-    	document.getElementById("status").innerHTML = "unknown"
-    }
+ //    }
+ //    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+ //    {
+ //        var intent= document.getElementById("start_navi_").href;
+ //    	intent = intent.replace("BROWSER","Chrome");
+ //    	document.getElementById("start_navi_").href = intent
+ //    	document.getElementById("status").innerHTML = "Chrome"
+ //    }
+ //    else if(navigator.userAgent.indexOf("Safari") != -1)
+ //    {
+ //    	var intent= document.getElementById("start_navi_").href;
+ //    	intent = intent.replace("BROWSER","Safari");
+ //    	document.getElementById("start_navi_").href = intent
+ //    	document.getElementById("status").innerHTML = "Safari"
+ //    }
+ //    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+ //    {
+ //         var intent= document.getElementById("start_navi_").href;
+ //    	intent = intent.replace("BROWSER","Firefox");
+ //    	document.getElementById("start_navi_").href = intent
+ //    	document.getElementById("status").innerHTML = "Firefox"
+ //    }
+ //    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+ //    {
+ //     	var intent= document.getElementById("start_navi_").href;
+ //    	intent = intent.replace("BROWSER","IE");
+ //    	document.getElementById("start_navi_").href = intent
+ //    	document.getElementById("status").innerHTML = "IE"
+ //    }  
+ //    else 
+ //    {
+ //    	var intent= document.getElementById("start_navi_").href;
+ //    	intent = intent.replace("BROWSER","unknown");
+ //    	document.getElementById("start_navi_").href = intent
+ //    	document.getElementById("status").innerHTML = "unknown"
+ //    }
 }
